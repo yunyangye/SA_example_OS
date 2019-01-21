@@ -1,0 +1,138 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>set_water_heater_efficiency</name>
+  <uid>2d816008-0d26-440d-957a-6f823f192fb3</uid>
+  <version_id>129f5d14-a282-4e9b-872e-b28ae97f49f6</version_id>
+  <version_modified>20171129T031202Z</version_modified>
+  <xml_checksum>A05EBCA5</xml_checksum>
+  <class_name>SetWaterHeaterEfficiency</class_name>
+  <display_name>Set Water Heater Efficiency</display_name>
+  <description>This measure aims to change water heater efficiency and fuel type.</description>
+  <modeler_description>Change water heater efficiency and fuel type.</modeler_description>
+  <arguments>
+    <argument>
+      <name>heater_fuel_type_widget</name>
+      <display_name>Fuel type</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>NaturalGas</default_value>
+      <choices>
+        <choice>
+          <value>0</value>
+          <display_name>NaturalGas</display_name>
+        </choice>
+        <choice>
+          <value>1</value>
+          <display_name>Electricity</display_name>
+        </choice>
+        <choice>
+          <value>2</value>
+          <display_name>PropaneGas</display_name>
+        </choice>
+        <choice>
+          <value>3</value>
+          <display_name>FuelOil#1</display_name>
+        </choice>
+        <choice>
+          <value>4</value>
+          <display_name>FuelOil#2</display_name>
+        </choice>
+        <choice>
+          <value>5</value>
+          <display_name>Coal</display_name>
+        </choice>
+        <choice>
+          <value>6</value>
+          <display_name>Diesel</display_name>
+        </choice>
+        <choice>
+          <value>7</value>
+          <display_name>Gasoline</display_name>
+        </choice>
+        <choice>
+          <value>8</value>
+          <display_name>OtherFuel1</display_name>
+        </choice>
+        <choice>
+          <value>9</value>
+          <display_name>OtherFuel2</display_name>
+        </choice>
+        <choice>
+          <value>10</value>
+          <display_name>Steam</display_name>
+        </choice>
+        <choice>
+          <value>11</value>
+          <display_name>DistrictHeating</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>heater_thermal_efficiency</name>
+      <display_name>Thermal efficiency [between 0 and 1]</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.8</default_value>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Service Water Heating.Water Heating</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Apply Measure Now</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>set_water_heater_efficiency_heat_loss_and_peak_water_flow_rate_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>B1D9ED97</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>C4F35230</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.12.0</identifier>
+        <min_compatible>1.12.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>77049BE5</checksum>
+    </file>
+    <file>
+      <filename>desktop.ini</filename>
+      <filetype>ini</filetype>
+      <usage_type>test</usage_type>
+      <checksum>1F1C47A7</checksum>
+    </file>
+  </files>
+</measure>

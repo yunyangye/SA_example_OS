@@ -1,0 +1,80 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>replace_lights_in_space_type_with_lpd</name>
+  <uid>6e105c43-b199-4c19-8863-b6f9eaca91dd</uid>
+  <version_id>af34ea6c-be2b-40cb-a79e-77a651f792ac</version_id>
+  <version_modified>20171129T031159Z</version_modified>
+  <xml_checksum>81C5D8E7</xml_checksum>
+  <class_name>ReplaceLightsInSpaceTypeWithLPD</class_name>
+  <display_name>Replace Lights in Space Type with LPD</display_name>
+  <description>This measure aims to change LPD.</description>
+  <modeler_description>Modify the value of LPD.</modeler_description>
+  <arguments>
+    <argument>
+      <name>lpd</name>
+      <display_name>Lighting Power Density (W/m^2)</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>1</default_value>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Electric Lighting.Electric Lighting Controls</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Apply Measure Now</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>replace_lights_in_space_type_with_lpd_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>ADF28712</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>C4F35230</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.12.0</identifier>
+        <min_compatible>1.12.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>0A8798BD</checksum>
+    </file>
+    <file>
+      <filename>desktop.ini</filename>
+      <filetype>ini</filetype>
+      <usage_type>test</usage_type>
+      <checksum>1F1C47A7</checksum>
+    </file>
+  </files>
+</measure>

@@ -1,0 +1,88 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>change_u_valueand_shgc_of_windows</name>
+  <uid>418fd085-6090-4d82-8d16-ff0e71973f9d</uid>
+  <version_id>d1a73e04-5e2b-46cc-ad26-b98c4108465a</version_id>
+  <version_modified>20180110T170434Z</version_modified>
+  <xml_checksum>9C8A26EB</xml_checksum>
+  <class_name>ChangeUValueandSHGCOfWindows</class_name>
+  <display_name>Change U-Value and SHGC Of Windows</display_name>
+  <description>This measure aims to change U-Value and SHGC of windows.</description>
+  <modeler_description>Change U-Value and SHGC of windows.</modeler_description>
+  <arguments>
+    <argument>
+      <name>window_u_value_ip</name>
+      <display_name>Window U-Value (Btu/ft^2*h*R)</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>10</default_value>
+    </argument>
+    <argument>
+      <name>window_shgc</name>
+      <display_name>Window SHGC</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.5</default_value>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Envelope.Fenestration</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Apply Measure Now</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>C4F35230</checksum>
+    </file>
+    <file>
+      <filename>desktop.ini</filename>
+      <filetype>ini</filetype>
+      <usage_type>test</usage_type>
+      <checksum>1F1C47A7</checksum>
+    </file>
+    <file>
+      <filename>change_u_value_and_shgc_of_windows_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>E8483DF2</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.12.0</identifier>
+        <min_compatible>1.12.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>0BD7B2DD</checksum>
+    </file>
+  </files>
+</measure>

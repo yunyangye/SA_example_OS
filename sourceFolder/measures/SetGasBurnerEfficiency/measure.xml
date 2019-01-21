@@ -1,0 +1,80 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>set_gas_burner_efficiency</name>
+  <uid>52c5d9e5-edce-45bb-96b9-6a139728f8c1</uid>
+  <version_id>c79d1cd1-5337-4a91-a498-0ccbc70a3925</version_id>
+  <version_modified>20171129T031201Z</version_modified>
+  <xml_checksum>470FC630</xml_checksum>
+  <class_name>SetGasBurnerEfficiency</class_name>
+  <display_name>Set Gas Burner Efficiency</display_name>
+  <description>This measure aims to change gas burner efficiency.</description>
+  <modeler_description>Change gas burner efficiency.</modeler_description>
+  <arguments>
+    <argument>
+      <name>eff</name>
+      <display_name>Burner Efficiency (fractional)</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.95</default_value>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>HVAC.Heating</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Apply Measure Now</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>set_gas_burner_efficiency_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>2451B012</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>C4F35230</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.12.0</identifier>
+        <min_compatible>1.12.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>AD7326BE</checksum>
+    </file>
+    <file>
+      <filename>desktop.ini</filename>
+      <filetype>ini</filetype>
+      <usage_type>test</usage_type>
+      <checksum>1F1C47A7</checksum>
+    </file>
+  </files>
+</measure>

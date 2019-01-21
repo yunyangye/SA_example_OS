@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 26 19:24:33 2018
+
+@author: yunyangye
+"""
+import numpy as np
+from sklearn.svm import SVR
+from sklearn.metrics import mean_squared_error
+from sklearn.cross_validation import train_test_split
+
+#################################################
+# this package is used to train and test meta models,
+# and then select the best solution
+#################################################
+
+# X is the data set of variables (inputs)
+# y is the data set of the energy data (output)
+# X_brute is the brute force sample set (inputs)
+
+# y_best is the target output value
+def meta_svr(X,y,X_brute,y_best):
+    # split the training set and testing set
+    X_train, X_test, y_train, y_test = train_test_split(X, y)
+
+    # train the meta model
+    svr = SVR(kernel='sigmoid')
+    svr.fit(X_train,y_train)
+    
+    # test the meta model
+    pred_SVR = svr.predict(X_test)
+
+    # calculate the Mean Squared Error
+    mse = mean_squared_error(y_test, pred_SVR)
+    
+    # generate the output set of brute force sample set
+    Y_brute_SVR = svr.predict(X_brute)
+	
+    err = 10000
+    ind_best = -1
+    for ind,val in enumerate(Y_brute_SVR):
+        if np.abs(Y_brute_SVR - y_best) < err:
+            err = np.abs(Y_brute_SVR - y_best)
+            ind_best = ind
+    
+    return X_brute[ind_best], Y_brute_SVR[ind_best], err, mse
+	
